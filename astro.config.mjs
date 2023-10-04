@@ -9,9 +9,7 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://giusygriecopress.github.io/Portfolio/',
-  base: /Portfolio
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
+  integrations: [mdx(), sitemap(), tailwind(), image(    {
       serviceEntryPoint: '@astrojs/image/sharp',
       cacheDir: "./.cache/image",
       logLevel: 'debug',
