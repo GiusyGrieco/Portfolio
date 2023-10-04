@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Giusy Grieco</div>
+    <div class="text-3xl py-3 font-bold">Creative Technologist</div>
+    <div class="py-2">
+      <text class="text-lg">
+        <i>Power corrupts, PowerPoint corrupts more.</i>
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://www.linkedin.com/in/giusy-grieco-101612202/" target="_blank"> Let's connect!</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Welcome to my academic portfolio webpage - where I pretend to be serious</div>
+  </div>
+
+  <HorizontalCard
+    title=""
+    img=""
+    desc="I am Giusy Grieco, a creative technologist with a strong academic background and a commitment to facilitate the complex interactions between private and public sector for cultural policy making."
+    url="#"
+    badge=""
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="I currently mix design thinking and web development, creating digital ecosystems for relevant cultural p people find themselves confortable to discuss, create, and resolve problems. My consultancy work in Digital Ethics showcases my expertise in sustainable services and products."
+    url="#"
+    badge="Professional Background"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="My academic journey includes a master in Digital Humanities from the University of Bologna, a specialization in Interaction Media Design with a period at HSLU - University of Applied Sciences in Luzern, Switzerland. I draw on Karen Barad ideas, particularly the concept of <b>intra-action</b>, to enable transdisciplinary visions."
+    url="#"
+    badge="Academic Background"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="As a practice-lead professionist, I'm committed to draw upon existing knowledge for innovative theoretical frameworks, emphasizing socio-technical changes and participative practices.I'm a great advocate of collaborative learning. My past experiences in a fablab allowed me to be versatile, have faith in my colleagues job and always be curious. That's why I'm looking to work in a dynamic and young environment. I cannot imagine myself but in a stimulating and open environment. "
+    url="#"
+    badge="Philosophy"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="My research spans policy making and tech stewardship for educational activities. I've been lucky enough to participate to important projects, both as a mentee and working in, such as the tech stewarship program by All Tech is Human, and others than I will mention in the future months."
+    url="#"
+    badge="Research Focus"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="The central themes of my work include citizen participation, ethical practices in tech transitions, and the integration of TUI (tangible user interfaces) and participative practices in cultural development."
+    url="#"
+    badge="Key Issues and Perspectives"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="My multidisciplinary background in design, digital knowledge organization, and public-private cultural policy making informs my approach, fostering collaboration between academia and grassroots realities."
+    url="#"
+    badge="Integration of Disciplines"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="Looking ahead, I aim to bridge the gap between participative practices and cultural policy making, particularly in the context of serious game developments."
+    url="#"
+    badge="Future Directions"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="Freedom, tech ethics and justice are at the core of my work. As ex mentee of All Tech is Human program, I developed a strong sense of ethics in the development of Interactive Interfaces."
+    url="#"
+    badge="Values & Ethics"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="My commitment for transdisciplinary collaboration makes me a facilitator of processes."
+    url="#"
+    badge="Leadership and Networking"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title=""
+    img=""
+    desc="I write on Medium and I have a personal newsletter on Substack."
+    url="#"
+    badge="Communication & Dissemination"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from Projects</div>
+  </div>
+
+  <HorizontalCard
+  title="UNI_Verso"
+  img="/0_0_8.jpg"
+  desc="In this project, carried out in collaboration with ARTER for European Bauhaus, I developed information architecture, WordPress website and the main concept for the development of augmented reality for the students of the University of Bologna together with the team."
+  url="/projects"
+  badge="New European Bauhaus"
+/>
+</BaseLayout>

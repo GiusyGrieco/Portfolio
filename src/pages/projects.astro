@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Skłodowska"
+    img="/Marie.png"
+    desc=" In this project of knowledge organization, I curated the UI aspect, together with the content, improving readability and accessibility for a pleasant usability. "
+    url="https://sklodowskaproject.github.io/"
+    badge="UI | Information Architecture | Web Development"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="UNI_Verso"
+    img="/0_0_8.jpg" 
+    desc="In this project, carried out in collaboration with ARTER for European Bauhaus, I developed information architecture, WordPress website and the main concept for the development of augmented reality for the students of the University of Bologna together with the team."
+    url="https://drive.google.com/drive/folders/1DDXX2Zd6vjTbFYRLzFNFdgR87bvzRyi0?usp=sharing"
+    badge="New European Bauhaus | Service Design"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Chthulucene"
+    img="/chthulu.jpg"
+    desc="The development of this Ontology is born in the context of the Knowledge Representation and Extraction course at Alma Mater in Bologna. Click to see the official website of the project (opening from web is highly suggested)."
+    url="https://explorers-in-the-chthulucene.github.io/SemioticDrifting/"
+    badge="Ontology Developing | Web Development"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Remake of an Elderly Care App"
+    img="GherryA.png"
+    desc="The goal of this project was to re-take a faield project about an Ederly Care App. We opted for the implementation of a machine learning system to reuse UGC in favor of the creation of a proprietary Cloud."
+    url="https://www.figma.com/file/C7q10B8b67th1UfzofesQD/GHERRYPlus_DesignSystem%26co?type=design&node-id=0%3A1&mode=design&t=3h3K1LhwxzxeyQp2-1"
+    badge="UX | Figma & Adobe Suite"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="FOODIFICATION"
+    img="Tino.png"
+    desc="FOODIFICATION is a food-based gaming experience. The experience that teaches about food through games is held at MAMbo in collaboration with FICO and Banco Alimentare."
+    url="https://www.figma.com/proto/9Du4hwz2mYIZfWpqKENnaf/FOODIFICATION?page-id=0%3A1&node-id=4-3&viewport=-216%2C367%2C0.66&scaling=scale-down&starting-point-node-id=4%3A3&t=RF2s4slAtSHkM6mg-1"
+    badge="Serious Game Concept & Interface | Figma"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Entreprecariat"
+    img="/Net.png"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="https://entreprecariat.gitbook.io/entreprecariat/"
+    badge="Network Analysis | Natural Language Processing"
+  />
+
+</BaseLayout>
